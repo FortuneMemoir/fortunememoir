@@ -1,0 +1,336 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Suisse";
+  src: url("Assets/Font/SuisseIntl-Regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Suisse";
+  src: url("Assets/Font/SuisseIntl-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Suisse";
+  src: url("Assets/Font/SuisseIntl-SemiBold.otf");
+  font-weight: 600;
+}
+
+/* CODE GOES HERE */
+
+body {
+  background-color: #000;
+}
+
+.navbar {
+  background-color: rgb(119, 119, 119);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 6%;
+  padding: 1.5rem 1rem;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.nav-button {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  font-family: "Suisse";
+  color: black;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  color: yellow;
+}
+
+.nav-group {
+  list-style-type: none;
+}
+
+.nav-group li {
+  display: inline;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-family: "Suisse";
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
+
+.nav-item:hover {
+  color: yellow;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* @keyframes slide-from-left {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 20%;
+  }
+} */
+
+.screen {
+  height: 100%;
+  width: 80%;
+  background-color: rgb(27, 27, 27);
+  position: fixed;
+  bottom: 0;
+  right: 100%;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+  /* text-align: center; */
+  /* animation-name: slide-from-left;
+  animation-duration: 800ms;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 1.01); */
+}
+
+.show {
+  right: 20%;
+  transition: 0.5s all ease-in-out;
+}
+
+.screen-wrapper {
+  margin: auto;
+}
+
+.screen-cat {
+  margin-bottom: 2rem;
+}
+.cat-head {
+  font-family: "Suisse";
+  color: white;
+  size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cat-items {
+  font-family: "Suisse";
+  color: rgb(193, 193, 193);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.filter-button-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-add-button {
+  padding: 1rem;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  font-family: "Suisse";
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.hero {
+  align-items: center;
+  margin: auto;
+}
+
+.hero-logo {
+  font-family: "NewSpirit";
+  color: white;
+  font-size: 18vw;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.hero-desc {
+  width: 50%;
+  color: white;
+  font-family: "Suisse", sans-serif;
+  font-weight: normal;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-head {
+  font-size: 0.75rem;
+  width: 100%;
+  padding: 1.5rem auto;
+  background: #000000;
+  color: white;
+  font-family: "Suisse";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  /* border-bottom: 1px solid white; */
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.block-head img {
+  max-width: 16rem;
+  margin: 1rem auto;
+}
+
+.block-wrapper {
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.block-card {
+  max-width: 360px;
+  color: white;
+  flex: 0 1 100%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  /* margin-right: 0.5rem; */
+  /* aspect-ratio: 1 / 1; */
+  border: 1px solid #333333;
+}
+
+.block-card > * {
+  text-decoration: none;
+}
+
+.block-card-title {
+  font-family: "Suisse";
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.block-card-img {
+  background-color: #333333;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 1.5rem;
+}
+
+.block-card-img img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.block-card-desc {
+  font-family: "Suisse";
+  font-size: 1rem;
+  color: #797979;
+}
+
+.block-card-tags {
+  margin-top: 0.75rem;
+}
+
+.tags {
+  width: fit-content;
+  padding: 0.15rem 0.65rem;
+  font-family: "Suisse";
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: black;
+  border-radius: 16px;
+  background-color: rgb(119, 119, 119);
+}
+
+.block-card-date {
+  font-family: "Suisse";
+  font-size: 0.75rem;
+  color: #797979;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Fortune Memoir</title>
+  </head>
+  <body onload="setBlockCard()">
+    <!-- NavBar -->
+    <div class="navbar">
+      <button class="nav-button" type="button" id="filter-button">
+        FILTER
+      </button>
+      <button class="nav-button" type="button" id="menu-button">MENU</button>
+    </div>
+    <!-- NavBar End -->
+
+    <!-- FilterScreen -->
+    <div class="screen" id="screen">
+      <div class="screen-wrapper">
+        <div class="screen-cat">
+          <p class="cat-head">Filter Item by Tags</p>
+          <p class="cat-items" id="gift">GIFT</p>
+          <p class="cat-items" id="memories">MEMORIES</p>
+          <p class="cat-items" id="merchandise">MERCHANDISE</p>
+        </div>
+        <!-- <div class="screen-cat">
+          <p class="cat-head">Sort By</p>
+          <p class="cat-items" id="newest">NEWEST</p>
+          <p class="cat-items" id="oldest">OLDEST</p>
+        </div> -->
+      </div>
+      <div class="filter-button-wrapper">
+        <button
+          class="filter-add-button"
+          type="button"
+          id="filter-reset-button"
+        >
+          RESET
+        </button>
+        <button
+          class="filter-add-button"
+          type="button"
+          id="filter-close-button"
+        >
+          CLOSE
+        </button>
+      </div>
+    </div>
+    <!-- FilterScreen End -->
+
+    <div class="block-head">
+      <img src="Assets/Logo/Logo 2 White.png" alt="" />
+    </div>
+    <div class="block-wrapper" id="block-wrapper">
+      <!-- <div class="block-card">
+        <a href="#">
+          <div class="block-card-img">
+            <img
+              src="https://cdn.foreignpolicy.design/wp-content/uploads/FOREIGNPOLICY_SIPF-06.jpg?strip=all&lossy=1&quality=90&ssl=1"
+              alt=""
+            />
+          </div>
+          <div class="block-card-date">
+            <time datetime="1945-08-17">1945.08.17</time>
+          </div>
+          <div class="block-card-title">Musat Space 6th Anniversary</div>
+          <div class="block-card-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            explicabo omnis rem facilis quam, corrupti ea aliquid neque
+            laudantium tenetur voluptate veniam!
+          </div>
+          <div class="block-card-tags">
+            <p class="tags">MERCHANDISE</p>
+          </div>
+        </a>
+      </div>
+      <div class="block-card">
+        <a href="#">
+          <div class="block-card-img">
+            <img
+              src="https://cdn.foreignpolicy.design/wp-content/uploads/FOREIGNPOLICY_SIPF-06.jpg?strip=all&lossy=1&quality=90&ssl=1"
+              alt=""
+            />
+          </div>
+          <div class="block-card-date">
+            <time datetime="1945-08-17">1945.08.17</time>
+          </div>
+          <div class="block-card-title">Musat Space 6th Anniversary</div>
+          <div class="block-card-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            explicabo omnis rem facilis quam, corrupti ea aliquid neque
+            laudantium tenetur voluptate veniam!
+          </div>
+          <div class="block-card-tags">
+            <p class="tags">MERCHANDISE</p>
+          </div>
+        </a>
+      </div>
+      <div class="block-card">
+        <a href="#">
+          <div class="block-card-img">
+            <img
+              src="https://cdn.foreignpolicy.design/wp-content/uploads/FOREIGNPOLICY_SIPF-06.jpg?strip=all&lossy=1&quality=90&ssl=1"
+              alt=""
+            />
+          </div>
+          <div class="block-card-date">
+            <time datetime="1945-08-17">1945.08.17</time>
+          </div>
+          <div class="block-card-title">Musat Space 6th Anniversary</div>
+          <div class="block-card-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            explicabo omnis rem facilis quam, corrupti ea aliquid neque
+            laudantium tenetur voluptate veniam!
+          </div>
+          <div class="block-card-tags">
+            <p class="tags">MERCHANDISE</p>
+          </div>
+        </a>
+      </div>
+      <div class="block-card">
+        <a href="#">
+          <div class="block-card-img">
+            <img
+              src="https://cdn.foreignpolicy.design/wp-content/uploads/FOREIGNPOLICY_SIPF-06.jpg?strip=all&lossy=1&quality=90&ssl=1"
+              alt=""
+            />
+          </div>
+          <div class="block-card-date">
+            <time datetime="1945-08-17">1945.08.17</time>
+          </div>
+          <div class="block-card-title">Musat Space 6th Anniversary</div>
+          <div class="block-card-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            explicabo omnis rem facilis quam, corrupti ea aliquid neque
+            laudantium tenetur voluptate veniam!
+          </div>
+          <div class="block-card-tags">
+            <p class="tags">MERCHANDISE</p>
+          </div>
+        </a>
+      </div> -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
