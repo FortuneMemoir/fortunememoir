@@ -1,0 +1,36 @@
+[
+  {
+    "image": "https://i.pinimg.com/originals/77/b9/e7/77b9e76f52ac594d104bfa284fbd24b4.gif",
+    "tgl": "2024-12-04",
+    "title": "Title Obj 1",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendiexplicabo omnis rem facilis quam, corrupti ea aliquid neque laudantium tenetur voluptate veniam!",
+    "tags": "MERCHANDISE",
+    "numID": 4
+  },
+
+  {
+    "image": "https://cdn.foreignpolicy.design/wp-content/uploads/FOREIGNPOLICY_SIPF-06.jpg?strip=all&lossy=1&quality=90&ssl=1",
+    "tgl": "2024-12-03",
+    "title": "Title Obj 2",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendiexplicabo omnis rem facilis quam, corrupti ea aliquid neque laudantium tenetur voluptate veniam!",
+    "tags": "GIFT",
+    "numID": 3
+  },
+
+  {
+    "image": "https://i.pinimg.com/originals/64/6e/2c/646e2cbd13e9f5405e2db984e26ab079.gif",
+    "tgl": "2024-12-02",
+    "title": "Title Obj 3",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendiexplicabo omnis rem facilis quam, corrupti ea aliquid neque laudantium tenetur voluptate veniam!",
+    "tags": "MEMORIES",
+    "numID": 2
+  },
+  {
+    "image": "https://i.pinimg.com/originals/80/9d/50/809d5087c4098be82394b718891fa9cb.gif",
+    "tgl": "2024-12-01",
+    "title": "Title Obj 4",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendiexplicabo omnis rem facilis quam, corrupti ea aliquid neque laudantium tenetur voluptate veniam!",
+    "tags": "MERCHANDISE",
+    "numID": 1
+  }
+]

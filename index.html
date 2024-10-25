@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Fortune Memoir</title>
   </head>
-  <body onload="setBlockCard()">
+  <body onload="renderCard(cardObject)">
     <!-- NavBar -->
     <div class="navbar">
       <button class="nav-button" type="button" id="filter-button">
@@ -16,6 +16,7 @@
     </div>
     <!-- NavBar End -->
 
+    <div class="thumb-wrapper" id="thumb-wrapper"></div>
     <!-- FilterScreen -->
     <div class="screen" id="screen">
       <div class="screen-wrapper">
@@ -44,6 +45,8 @@
       </div>
     </div>
     <!-- FilterScreen End -->
+    <div class="dimmer" id="dimmer"></div>
+    <div class="modal" id="modal"></div>
 
     <div class="block-head">
       <img src="Assets/Logo/Logo 2 White.png" alt="" />
